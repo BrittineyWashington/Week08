@@ -1,0 +1,231 @@
+/*Coding Assignment: Week 08  
+Style the website you made last week using CSS with the following requirements:
+Use only external CSS file (no internal or inline styling)
+Every element must be styled.
+Create style rules using class, id, and element selectors. */
+
+/* ELEMENT SELECTORS */
+
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-attachment: scroll;
+}
+body {
+    background-color: rgb(188, 14, 5);
+    margin: .5rem 3.5rem; 
+}
+h1 {
+    text-align: center;
+    color:rgb(3, 3, 3);
+}
+h2 {
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+    border-color: rgb(7, 7, 7);
+    border-style: dotted;
+    border-radius: .5rem;
+    color:rgb(9, 6, 6);
+    background-color: rgb(248, 245, 245);
+    filter:drop-shadow(4px 4px 3px rgb(15, 14, 14));
+}
+h3 {
+    text-align: center;
+    color: rgb(219, 204, 206);
+    text-shadow: 4px 4px 4px black;
+}
+div {
+    background-color:rgba(85, 78, 126, 0.401); 
+	border-style: solid; 
+	border-color: rgb(17, 17, 17); 
+    border-width: 5px;
+	border-radius: 5px;
+    text-align: justify;
+}
+.link {
+    color: black;
+    background-color: rgb(247, 243, 243);
+    width: 100%;
+    padding: 5px; 
+    font-weight: lighter;
+    border-color: rgb(147, 5, 5);
+    border-style: groove;
+    fill-opacity: 1rem;
+    background: content-box radial-gradient(white, rgb(160, 159, 159));
+}
+.link:hover {
+    background-color: rgb(201, 109, 109);
+    opacity: .5rem;
+    border-color: black;
+}
+a {
+    color: rgb(7, 6, 6); 
+    font-style: bold;
+}
+a:hover {
+    color: rgb(254, 252, 252);
+}
+footer {
+    text-align: center;
+    margin: 2 rem 0 2rem 0;
+}
+.img-div {
+    /* margin: 2rem;
+    border-radius: .5rem; */
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 2px 2px 2px 1px black;
+}
+.img-div1 {
+    border-radius: 20px;
+    justify-content: center;
+    padding: 20px; 
+}
+img {
+    margin: 2rem;
+    border-radius: 3 rem;
+    box-shadow: 5px 5px 5px 4px black;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+p {
+    font-size: 20px;
+    padding:10px;
+    text-align: center;
+}
+li {
+    font-size: 20px;
+    padding: 10px; 
+}
+ul {
+    padding: 20px;
+}
+.form {
+    text-align: center;  
+}
+input[type=text] {
+    width:80%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+}
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    border:3px solid rgb(12, 12, 11);
+    border-radius:4px;
+    background-color: rgb(238, 241, 238);
+    resize: none;
+    text-overflow: ellipsis;
+}
+.table, th, td {
+    table-layout: auto;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto; 
+    background-color: darkred;
+}
+.table1, .th1, .td1 {
+    table-layout: auto;
+    border: 2px dashed black;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+caption {
+    color:rgb(249, 246, 246);
+    text-shadow: 3px 3px 2px rgb(19, 18, 18);
+    font-size: 22px;
+}
+/*---CUSTOM CLASS NAME SELECTORS--- */
+.shadow-text {
+    text-shadow: 5px 5px 5px rgb(244, 238, 237);
+}
+button[type=button] {
+    background-color: whitesmoke;
+    color:black;
+    border:2px solid rgb(20, 14, 14);
+    border-radius: 12px;
+    padding: 32px 16px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px rgb(73, 8, 8);
+}
+#my_iFrame {
+    border: 2px dotted;
+    width: fit-content;
+    overflow: auto;
+    /* height: max-content; */
+    padding-bottom: 10px;
+}
+#my_iFrame1 {
+    border: 2px dotted;
+    width: auto;
+    /* height: max-content; */
+    padding-bottom: 10px;
+}
+
+/*----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+/* will keep working on the below section to make it */
+@media only screen and (max-width: 1500px) {
+    .img-div img {
+        width: 420px;
+    }
+    #my_iFrame {
+        width: 100%;
+    }
+    #my_iFrame1 {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    div{
+        justify-content: center;
+        overflow-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        margin: 1rem;
+    }
+    p,
+    li {
+        font-size: 16px;
+    }
+    .img-div img {
+        width: 230px;
+    }
+    #my_iFrame {
+        display: block;
+        width: 400px;
+    }
+    #my_iFrame1 {
+        display: block;
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
